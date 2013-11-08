@@ -2,12 +2,24 @@ body {
     background-color: black;
 }
 
-.picture{
-    background-color: gray;
+.picture {
+	/*position: absolute;*/
+}
+
+#cloud1 {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+#cloud2 {
+	position: absolute;
+	top: 50px;
+	right: 50px;
 }
 
 #car {
-    animation: mycar 5s;
+    animation: mycar 15s;
     position: relative;
     bottom: 150px;
     left: -1200px;
@@ -20,13 +32,13 @@ body {
 		bottom: 150px;
 	}
 
-	25% {
+	50% {
 		position: relative;
-		left: 300px;
+		left: 600px;
 		bottom: 150px
 	}
 
-	50% {
+/*	50% {
 		position: relative;
 		left: 600px;
 		bottom: 150px;
@@ -36,7 +48,7 @@ body {
 		position: relative;
 		left: 900px;
 		bottom: 150px;
-	}
+	}*/
 
 	100% {
 		position: relative;
