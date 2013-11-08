@@ -2,6 +2,15 @@ body {
     background-color: black;
 }
 
+button {
+	background-color: 00fff7;
+	height: 5%;
+	width: 10%;
+	position: absolute;
+	left: 40px;
+	bottom: 700px;
+}
+
 /*Animation for cloud1*/
 
 #cloud1 {
