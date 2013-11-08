@@ -8,5 +8,4 @@ $(document).ready(function(){
 		$('#cloud2').addClass("move_cloud2");
 		$('#car').addClass("move_car");
 	});
-
 });
