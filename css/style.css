@@ -5,9 +5,12 @@ body {
 /*Animation for cloud1*/
 
 #cloud1 {
-	animation: cloud_first 5s;
 	position: absolute;
     transform: translate(20px, -725px);
+}
+
+.move_cloud1 {
+	animation: cloud_first 5s;
 }
 
 @keyframes cloud_first{
@@ -30,9 +33,12 @@ body {
 /*Animation for Cloud2 */
 
 #cloud2 {
-	animation: cloud_second 5s;
 	position: absolute;
     transform: translate(700px, -700px);
+}
+
+.move_cloud2 {
+	animation: cloud_second 5s;
 }
 
 @keyframes cloud_second {
@@ -55,9 +61,12 @@ body {
 /*Animation for Car */
 
 #car {
-    animation: mycar 5s;
     position: relative;
     transform: translate(-1200px, -150px);
+}
+
+.move_car {
+    animation: mycar 5s;
 }
 
 @keyframes mycar {

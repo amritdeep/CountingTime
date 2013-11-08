@@ -1,19 +1,12 @@
 $(document).ready(function(){
+	$('#cloud1').removeClass("move_cloud1");
+	$('#cloud2').removeClass("move_cloud2");
+	$('#car').removeClass("move_car");
 
-	// alert("HO");
-	
-	// $('#cloud1').hide();
-	// $('#cloud2').hide();
-
-	// $('#car').hide();
-
-
-
-	// $(':button').click(function(){
-	// 	$('#cloud1').show();
-	// 	$('#cloud2').show();
-	// 	$('#car').show();
-	// });
-
+	$(':button').click(function(){
+		$('#cloud1').addClass("move_cloud1");
+		$('#cloud2').addClass("move_cloud2");
+		$('#car').addClass("move_car");
+	});
 
 });
