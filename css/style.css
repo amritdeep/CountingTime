@@ -1,7 +1,116 @@
 body {
-	background-color: black;
+    background-color: black;
 }
 
-#picture {
-	background-color: gray;
+.picture{
+    background-color: gray;
+}
+
+#car {
+    animation: mycar 5s;
+    position: relative;
+    bottom: 150px;
+    left: -1200px;
+}
+
+@keyframes mycar {
+	0% {
+		position: relative;
+		left: 0px;
+		bottom: 150px;
+	}
+
+	25% {
+		position: relative;
+		left: 300px;
+		bottom: 150px
+	}
+
+	50% {
+		position: relative;
+		left: 600px;
+		bottom: 150px;
+	}
+
+	75% {
+		position: relative;
+		left: 900px;
+		bottom: 150px;
+	}
+
+	100% {
+		position: relative;
+		left: 1200px;
+		bottom: 150px;
+	}
+}
+
+/*@keyframes mycar {
+	0% {
+		position: relative;
+		left: 0px;
+		bottom: 150px;
+	}
+
+	10% {
+		position: relative;
+		left: 120px;
+		bottom: 150px
+	}
+
+	20% {
+		position: relative;
+		left: 240px;
+		bottom: 150px;
+	}
+
+	30% {
+		position: relative;
+		left: 360px;
+		bottom: 150px
+	}
+
+	40% {
+		position: relative;
+		left: 480px;
+		bottom: 150px
+	}
+
+	50% {
+		position: relative;
+		left: 600px;
+		bottom: 150px
+	}
+
+	60% {
+		position: relative;
+		left: 720px;
+		bottom: 150px
+	}
+
+	70% {
+		position: relative;
+		left: 840px;
+		bottom: 150px
+	}
+
+	80% {
+		position: relative;
+		left: 960px;
+		bottom: 150px
+	}
+
+	90% {
+		position: relative;
+		left: 1080px;
+		bottom: 150px
+	}
+
+   100% {
+   	position: relative;
+   	left: 1200px
+   	bottom: 150px;
+   }*/
+
+   
 }
