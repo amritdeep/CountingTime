@@ -1,0 +1,194 @@
+body {
+    background-color: black;
+}
+
+.btn {
+	background-color: #e4f5fc;
+	width: 10%;
+	height: 20%;
+	position: absolute;
+	left: 50px;
+	top: 150px;
+}
+
+button {
+	background-color: #e4f5fc;
+	height: 20%;
+	width: 100%
+}
+
+.cloud {
+	height: 20%;
+	width: 100%;
+	position: absolute;
+}
+
+.road {
+	height: 24%;
+	width: 100%;
+	position: absolute;
+	bottom: -80px;
+}
+
+.tree {
+	height: 20%;
+	width: 100%;
+	position: absolute;
+	bottom: 80px;
+}
+
+.move_cloud1 {
+	background-color: gray;
+	animation: cloud_first 5s;
+	height: 100%;
+	width: 50%;
+}
+
+/*.move_cloud2 {
+	background-color: white;
+	animation: cloud_second 5s;
+	height: 100%;
+	width: 50%;
+}*/
+
+
+
+/*Animation for cloud1*/
+
+#cloud1 {
+	position: absolute;
+    transform: translate(1500px, -725px);
+}
+
+/*.move_cloud1 {
+	animation: cloud_first 5s;
+}*/
+
+@keyframes cloud_first{
+	0% {
+		position: relative;
+    	transform: translate(800px, -725px);
+	}
+
+	50% {
+		position: relative;
+    	transform: translate(100px, -725px);
+	}
+
+	100% {
+		position: relative;
+    	transform: translate(-1000px, -725px);
+	}
+}
+
+/*Animation for Cloud2 */
+
+#cloud2 {
+	position: absolute;
+    transform: translate(2000px, -700px);
+}
+
+/*.move_cloud2 {
+	animation: cloud_second 5s;
+}*/
+
+@keyframes cloud_second {
+	0% {
+		position: relative;
+    	transform: translate(1100px, -700px);
+	}
+
+	50% {
+		position: relative;
+    	transform: translate(500px, -700px);
+	}
+
+	100% {
+		position: relative;
+    	transform: translate(-350px, -700px);
+	}
+}
+
+/*Animation for Big Tree */
+
+#big_tree {
+	position: relative;
+	transform: translate(2000px, -400px);
+}
+
+.move_big_tree {
+	animation: bigTree 5s;
+}
+
+@keyframes bigTree {
+	0% {
+		position: relative;
+		transform: translate(1100px, -400px);
+	}
+
+	50% {
+		position: relative;
+		transform: translate(350px, -400px);
+	}
+
+	100% {
+		position: relative;
+		transform: translate(-500px, -400px);
+	}
+}
+
+/*Animation for Small Tree */
+
+#small_tree {
+	position: relative;
+	transform: translate(2500px, -400px);
+}
+
+.move_small_tree {
+	animation: smallTree 5s;
+}
+
+@keyframes smallTree {
+	0% {
+		position: relative;
+		transform: translate(1500px, -400px);
+	}
+
+	50% {
+		position: relative;
+		transform: translate(150px, -400px);
+	}
+
+	100% {
+		position: relative;
+		transform: translate(-2500px, -400px);
+	}
+}
+
+/*Animation for Car */
+
+#car {
+    position: relative;
+    transform: translate(-1200px, -150px);
+}
+
+.move_car {
+    animation: mycar 5s;
+}
+
+@keyframes mycar {
+	0% {
+		position: relative;
+    	transform: translate(0px, -150px);
+	}
+
+	50% {
+		position: relative;
+    	transform: translate(600px, -150px);
+	}
+
+	100% {
+		position: relative;
+    	transform: translate(1200px, -150px);
+	}
+}
