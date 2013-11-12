@@ -14,15 +14,14 @@
 	<div class="wrapper">
 		
 		<div class="picture">
-
 			<div class="road">
 				<div class="car">
-					<img src="images/car-f.png">
+					<img src="images/car.png">
 				</div>
-				<div class="wheel_left">
+				<div class="wheel_left" id="wheel1">
 					<img src="images/wheel_L.png">
 				</div>
-				<div class="wheel_right">
+				<div class="wheel_right" id="wheel2">
 					<img src="images/wheel_R.png">
 				</div>
 			</div>
@@ -30,98 +29,55 @@
  			<!-- Define Cloud -->
 
 			<div class="cloud">
-				<div class="move_cloud1">
+				<div class="move_cloud1" id="cloud_id1">
 					<img src="images/cloud-1.png">
 				</div>
-				<div class="move_cloud2">
+				<div class="move_cloud2" id="cloud_id2">
 					<img src="images/cloud-2.png">
 					<img src="images/cloud-1.png">
 				</div>
-				<div class="move_cloud3">
+				<div class="move_cloud3" id="cloud_id3">
 					<img src="images/cloud-1.png">
 					<img src="images/cloud-2.png">
 				</div>
-				<div class="move_cloud4">
+				<div class="move_cloud4" id="cloud_id4">
 					<img src="images/cloud-1.png">
 				</div>
-				<div class="move_cloud5">
-					<img src="images/cloud-1.png">
-				</div>
-				<div class="move_cloud6">
-					<img src="images/cloud-2.png">
-					<img src="images/cloud-1.png">
-				</div>
-				<div class="move_cloud7">
-					<img src="images/cloud-1.png">
-					<img src="images/cloud-2.png">
-				</div>
-				<div class="move_cloud8">
-					<img src="images/cloud-1.png">
-				</div>
+
 			</div>
 
 			<!-- Define Treees  -->
 			<div class="tree">
-				<div class="move_tree1">
+				<div class="move_tree1" id="tree_id1">
 					<img src="images/tree_small.png">
 					<img src="images/tree_big.png">
 				</div>
-
-				<div class="move_tree2">
+				<div class="move_tree2" id="tree_id2">
+					<img src="images/tree_big.png">
+					<img src="images/tree_small.png">
+				</div>
+				<div class="move_tree3" id="tree_id3">
 					<img src="images/tree_small.png">
 					<img src="images/tree_big.png">
 				</div>
-
-				<div class="move_tree3">
-					<img src="images/tree_small.png">
+				<div class="move_tree4" id="tree_id4">
 					<img src="images/tree_big.png">
-				</div>
-
-				<div class="move_tree4">
 					<img src="images/tree_small.png">
-					<img src="images/tree_big.png">
-				</div>
-
-				<div class="move_tree5">
-					<img src="images/tree_small.png">
-					<img src="images/tree_big.png">
-				</div>
-
-
-				<div class="move_tree6">
-					<img src="images/tree_small.png">
-					<img src="images/tree_big.png">
-				</div>
-
-				<div class="move_tree7">
-					<img src="images/tree_small.png">
-					<img src="images/tree_big.png">
-				</div>
-
-				<div class="move_tree8">
-					<img src="images/tree_small.png">
-					<img src="images/tree_big.png">
-				</div>
-
-				<div class="move_tree9">
-					<img src="images/tree_small.png">
-					<img src="images/tree_big.png">
-				</div>
-
-				<div class="move_tree10">
-					<img src="images/tree_small.png">
-					<img src="images/tree_big.png">
 				</div>
 
 			</div>
 
 
 		<div class="btn">
-			<button>Drive Me</button>
+			<button id="stop">Stop</button>
+			<button id="drive">Drive Me</button>
 			<button id="fifteen">15 Seconds</button>
 			<button id="thirty">30 Seconds</button>
-			<button id="forty-five">45 Seconds</button>
+			<button id="forty_five">45 Seconds</button>
 			<button id="sixty">60 Seconds</button>
+			
+			<p id="sec"></p>
+
 		</div>
 
 	</div>

@@ -1,20 +1,23 @@
 body {
 	background: url('../images/road.png') repeat-x;
 }
-
-.picture {
-	height: 100%;
-	width: 100%;
-}
-
 .btn {
 	background-color: #e4f5fc;
 	width: 10%;
-	height: 20%;
+	height: 18%;
 	position: absolute;
 	left: 3%;
 	top: 20%;
 	z-index: 3;
+}
+
+.btn #sec {
+	background-color: #e1ffff;
+	height: 35%;
+	width: 100%;
+    font-size: 30px;
+    color: #3f4c6b;
+    padding: 0px;
 }
 
 button {
@@ -23,64 +26,23 @@ button {
 	width: 100%
 }
 
+.picture {
+	height: 100%;
+	width: 100%;
+}
+
 .picture .cloud {
     height: 40%;
     width: 100%;
 	position: absolute;
 	top: 10%;
 }
-.cloud .move_cloud1, .cloud .move_cloud2, .cloud .move_cloud3, .cloud .move_cloud4, .cloud .move_cloud5, .cloud .move_cloud6, .cloud .move_cloud7, .cloud .move_cloud8 {
+
+.cloud .move_cloud1, .cloud .move_cloud2, .cloud .move_cloud3, .cloud .move_cloud4 {
     height: 50%;
     width: 50%; 
     position: absolute;
-}
-
-.cloud .move_cloud1 {
-	transform: translate(500px, 0px);
-	animation: cloud_one 10s;
-}
-
-.cloud .move_cloud2 {
-	transform: translate(2000px, 0px);
-	animation: cloud_two 20s;
-}
-
-.cloud .move_cloud3 {
-	transform: translate(3000px, 0px);
-	animation: cloud_one 10s;
-}
-
-.cloud .move_cloud4 {
-	transform: translate(4000px, 0px);
-	animation: cloud_two 20s;
-}
-
-.cloud .move_cloud5 {
-	transform: translate(5000px, 0px);
-	animation: cloud_one 10s;
-}
-
-.cloud .move_cloud6 {
-	transform: translate(6000px, 0px);
-	animation: cloud_two 20s;
-}
-
-.cloud .move_cloud7 {
-	transform: translate(7000px, 0px);
-	animation: cloud_one 10s;
-}
-
-.cloud .move_cloud8 {
-	transform: translate(8000px, 0px);
-	animation: cloud_two 20s;
-}
-
-@keyframes cloud_one {
-	100% {position: relative; transform: translate(-500px, 0px);}
-}
-
-@keyframes cloud_two {
-	100% {position: relative; transform: translate(-1500px, 0px);}
+	transform: translate(1500px, 0px);
 }
 
 .picture .tree {
@@ -90,69 +52,26 @@ button {
 	bottom: 330px;
 }
 
-.tree .move_tree1, .tree .move_tree2, .tree .move_tree3, .tree .move_tree4, .tree .move_tree5, .tree .move_tree6, .tree .move_tree7, .tree .move_tree8, .tree .move_tree9, .tree .move_tree10  {
-    height: 50%;
-    width: 50%; 
-    position: absolute;
-    bottom: 45%;
+.tree .move_tree1, .tree .move_tree2, .tree .move_tree3, .tree .move_tree4 {
+	position: absolute;
 }
 
-.tree .move_tree1 {
-	transform: translate(300px, 0px);
-	animation: move_tree_one 10s;
+.cloud .move_cloud1, .cloud .move_cloud3, .tree .move_tree1, .tree .move_tree3 {
+	transform: translate(1200px, 0px);
+	animation: move_first 3s infinite;
 }
 
-.tree .move_tree2 {
-	transform: translate(900px, 0px);
-	animation: move_tree_two 20s;
+.cloud .move_cloud2, .cloud .move_cloud4, .tree .move_tree2, .tree .move_tree4 {
+	transform: translate(2000px, 0px);
+	animation: move_second 3s infinite;
 }
 
-.tree .move_tree3 {
-	transform: translate(1500px, 0px);
-	animation: move_tree_one 10s;
+@keyframes move_first {
+	100% {transform: translate(-1200px, 0px);}
 }
 
-.tree .move_tree4 {
-	transform: translate(2400px, 0px);
-	animation: move_tree_two 20s;
-}
-
-.tree .move_tree5 {
-	animation: move_tree_one 10s;
-	transform: translate(3000px, 0px);
-}
-
-.tree .move_tree6 {
-	transform: translate(4300px, 0px);
-	animation: move_tree_two 20s;
-}
-
-.tree .move_tree7 {
-	animation: move_tree_one 10s;
-	transform: translate(4900px, 0px);
-}
-
-.tree .move_tree8 {
-	animation: move_tree_two 20s;
-	transform: translate(5500px, 0px);
-}
-
-.tree .move_tree9 {
-	animation: move_tree_one 10s;
-	transform: translate(2700px, 0px);
-}
-
-.tree .move_tree10 {
-	animation: move_tree_two 20s;
-	transform: translate(3000px, 0px);
-}
-
-@keyframes move_tree_one {
-	100% {position: relative; transform: translate(-1800px, 0px);}
-}
-
-@keyframes move_tree_two {
-	100% {position: relative; transform: translate(-1500px, 0px);}
+@keyframes move_second {
+	100% {transform: translate(-800px, 0px);}
 }
 
 .picture .road {
@@ -163,27 +82,26 @@ button {
 }
 
 .road .car {
-    /*background-color: red;*/
     width: 30%;
     height: 65%;
     position: relative;
 	transform: translate(300px, 0px);
-	/*animation: car 10s;*/
+	/*animation: car 10s infinite;*/
 }
 
 .road .wheel_left, .road .wheel_right {
 	height: 28%;
 	width: 7%;
-	/*transform: translate(140px, -45px) rotate(0deg);*/
 	position: relative;
-	animation: wheel 20s;
-	transform-origin:center center rotate(5deg);
+	/*animation: wheel 2s infinite;
+	/*transform-origin:center center rotate(0deg);*/
 }
 
 .road .wheel_left {
 	z-index: 1;
-	bottom: 55px;
+	bottom: 60px;
 	left: 340px;
+	animation: wheel_L 2s infinite;
 }
 
 .road .wheel_right {
@@ -191,9 +109,14 @@ button {
 	position: relative;
 	bottom: 105px;
 	left: 566px;
+	animation: wheel_R 2s infinite;
 }
 
-@keyframes wheel {
+@keyframes wheel_L {
+	100% {transform: rotate(-25deg);}
+}
+
+@keyframes wheel_R {
 	100% {transform: rotate(25deg);}
 }
 
