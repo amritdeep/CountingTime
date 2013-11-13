@@ -89,34 +89,4 @@ button {
 	/*animation: car 10s infinite;*/
 }
 
-.road .wheel_left, .road .wheel_right {
-	height: 28%;
-	width: 7%;
-	position: relative;
-	/*animation: wheel 2s infinite;
-	/*transform-origin:center center rotate(0deg);*/
-}
-
-.road .wheel_left {
-	z-index: 1;
-	bottom: 60px;
-	left: 340px;
-	animation: wheel_L 2s infinite;
-}
-
-.road .wheel_right {
-	z-index: 2;
-	position: relative;
-	bottom: 105px;
-	left: 566px;
-	animation: wheel_R 2s infinite;
-}
-
-@keyframes wheel_L {
-	100% {transform: rotate(-25deg);}
-}
-
-@keyframes wheel_R {
-	100% {transform: rotate(25deg);}
-}
 

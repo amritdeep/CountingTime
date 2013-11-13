@@ -1,9 +1,7 @@
 $(document).ready(function(){
 	var now = new Date;
-	var sec = now.getSeconds();
-	// alert(sec);
-	var current_sec = sec.setSeconds();
-	alert(current_sec);
+	var current_sec = now.getSeconds();
+	// alert(current_sec);
 	var fifteen_sec = current_sec + 15;
 	var sixty_sec = current_sec + 60;
 
@@ -20,31 +18,28 @@ $(document).ready(function(){
 		stopMove();
 	});
 
-	$('#drive').click(function(){
-		drive();
-	});
-
-	$('#fifteen').click(function(e){
+	$('#drive').click(function(e){
 		e.preventDefault();
 		drive();
-		for(var i = 0; i <= count.length; i++){
-			if(fifteen_sec == count[i]){
-				alert(fifteen_sec + "=" + count[i]);
-				// $(".btn #sec").html(i);
-				// stopMove();
-			}
-		}
-
 	});
 
+	$('#fifteen').click(function(){
+		// $('#car').animate({marginLeft: "+=550px"}, 1500);
+		$(this).animate(drive(), 1500);
+	});
+
+	$('#sixty').click(function(e){
+		e.preventDefault();
+		$(this).animate(drive(), 6000);
+	});
 
 function drive(){
 	for(var i = 1; i < 5; i++){
 		$('#cloud_id' + i).addClass('move_cloud' + i).show();
 		$('#tree_id' + i).addClass('move_tree' + i).show();
 	}
-	$('#wheel1').addClass('wheel_left').show();
-	$('#wheel2').addClass('wheel_right').show();
+	$('#car-moving').show();
+	$('#car-demo').hide();
 }
 
 function stopMove(){
@@ -52,8 +47,8 @@ function stopMove(){
 		$('#cloud_id' + i).removeClass('move_cloud' + i).hide();
 		$('#tree_id' + i).removeClass('move_tree' + i).hide();
 	}
-	$('#wheel1').removeClass('wheel_left').hide();
-	$('#wheel2').removeClass('wheel_right').hide();
+	$('#car-moving').hide();
+	$('#car-demo').show();
 }
 
 function count_sec(counts){
