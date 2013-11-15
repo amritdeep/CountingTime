@@ -1,37 +1,65 @@
 $(document).ready(function(){
-	var now = new Date;
-	var current_sec = now.getSeconds();
-	// alert(current_sec);
-	var fifteen_sec = current_sec + 15;
-	var sixty_sec = current_sec + 60;
-
-	var count = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
-			10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-			20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
-			30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 
-			40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
-			50, 51, 52, 53, 54, 55, 56, 57, 58, 59];
-
 	stopMove();
 
 	$('#stop').click(function(){
 		stopMove();
+		// var stop_time = new Date().getTime();
 	});
 
+
+	/*
 	$('#drive').click(function(e){
 		e.preventDefault();
-		drive();
+
+		// var start_time = Date.now();
+		var start_time = 0;
+
+		$(this).animate(drive(), function(){
+			$('#stop').click(function(){
+					// var stop_time = Date.now()
+					// var stop_time = new Date().getTime() % 60;
+					var stop_time = start_time ++;
+					// var elapsed = time + start_time;
+					alert(stop_time);
+
+					// alert(stop_time + ":" + start_time + "=" + elapsed );
+
+					// var diff = new Date(elapsed);
+
+					var offset = new Date().getTimezoneOffset();
+					// alert(offset);
+
+					// alert((diff.getTime() % 1000) % 60 );
+					// alert((diff.getMinutes() % 60))
+					// var hr = diff.getHours() % 60;
+					// var min = diff.getMinutes() % 60;
+					// var sec = diff.getSeconds() % 60;
+					// alert(sec);
+					$('.btn #sec').html("You have drive " + hr + ":" + min + ":" + sec  + "long");
+				// }
+			});
+		});
+	});
+*/
+
+	// var counter = 0;
+
+	// $('#drive').click(function(){
+	// 	// counter++
+	// 	$('.btn #sec').html(counter++);
+	// });
+
+	$('.btn #sec').date('count', 0);
+	$('#drive').click(function(){
+		$('.btn #sec').html(function(){
+			var $this = $(this),
+				count = $this.date('count') + 1;
+
+				$this.date('count', count);
+				return count;
+		});
 	});
 
-	$('#fifteen').click(function(){
-		// $('#car').animate({marginLeft: "+=550px"}, 1500);
-		$(this).animate(drive(), 1500);
-	});
-
-	$('#sixty').click(function(e){
-		e.preventDefault();
-		$(this).animate(drive(), 6000);
-	});
 
 function drive(){
 	for(var i = 1; i < 5; i++){
@@ -46,6 +74,15 @@ function stopMove(){
 	for(var i = 1; i < 5; i++){
 		$('#cloud_id' + i).removeClass('move_cloud' + i).hide();
 		$('#tree_id' + i).removeClass('move_tree' + i).hide();
+	}
+	$('#car-moving').hide();
+	$('#car-demo').show();
+}
+
+function stops(){
+	for(var i = 1; i < 5; i++){
+		$('#cloud_id' + i).stop();
+		$('#tree_id' + i).stop();
 	}
 	$('#car-moving').hide();
 	$('#car-demo').show();
