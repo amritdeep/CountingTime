@@ -43,6 +43,10 @@ button {
     width: 50%; 
     position: absolute;
 	transform: translate(1500px, 0px);
+	-webkit-transform: translate(1500px, 0px);
+	-moz-transform: translate(1500px, 0px);
+	-o-transform: translate(1500px, 0px);
+	-ms-transform: translate(1500px, 0px);
 }
 
 .picture .tree {
@@ -58,20 +62,51 @@ button {
 
 .cloud .move_cloud1, .cloud .move_cloud3, .tree .move_tree1, .tree .move_tree3 {
 	transform: translate(1200px, 0px);
+	-webkit-transform: translate(1200px, 0px);
+	-moz-transform: translate(1200px, 0px);
+	-o-transform: translate(1200px, 0px);
+	-ms-transform: translate(1200px, 0px);
+
 	animation: move_first 3s infinite;
+	-webkit-animation: move_first 3s infinite;
+	-moz-animation: move_first 3s infinite;
+	-o-animation: move_first 3s infinite;
+	-ms-animation: move_first 3s infinite;
 }
 
 .cloud .move_cloud2, .cloud .move_cloud4, .tree .move_tree2, .tree .move_tree4 {
 	transform: translate(2000px, 0px);
+	-webkit-transform: translate(2000px, 0px);
+	-moz-transform: translate(2000px, 0px);
+	-o-transform: translate(2000px, 0px);
+	-ms-transform: translate(2000px, 0px);
+
 	animation: move_second 3s infinite;
+	-webkit-animation: move_second 3s infinite;
+	-moz-animation: move_second 3s infinite;
+	-o-animation: move_second 3s infinite;
+	-ms-animation: move_second 3s infinite;
 }
 
 @keyframes move_first {
-	100% {transform: translate(-1200px, 0px);}
+	100% {
+		transform: translate(-1200px, 0px);
+		-webkit-transform: translate(-1200px, 0px);
+		-moz-transform: translate(-1200px, 0px);
+		-o-transform: translate(-1200px, 0px);
+		-ms-transform: translate(-1200px, 0px);
+	}
 }
 
 @keyframes move_second {
-	100% {transform: translate(-800px, 0px);}
+	100% {
+		transform: translate(-800px, 0px);
+		-webkit-transform: translate(-800px, 0px);
+		-moz-transform: translate(-800px, 0px);
+		-o-transform: translate(-800px, 0px);
+		-ms-transform: translate(-800px, 0px);
+	}
+
 }
 
 .picture .road {
@@ -86,7 +121,14 @@ button {
     height: 65%;
     position: relative;
 	transform: translate(300px, 0px);
-	/*animation: car 10s infinite;*/
+	-webkit-transform: translate(300px, 0px);
+	-moz-transform: translate(300px, 0px);
+	-o-transform: translate(300px, 0px);
+	-ms-transform: translate(300px, 0px);
 }
 
 
+/*-webkit-
+-moz-
+-o-
+-ms-*/

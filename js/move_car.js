@@ -2,24 +2,24 @@ $(document).ready(function(){
 	var timer = null,
 		inteval = 1000,
 		value = 0;
-		
+
 	stopMove();
 
 	$('#stop').click(function(){
-		stopMove();
 		clearInterval(timer);
 		timer = null;
+		stopMove();
 	});
 
 	$('#reset').click(function(){
 		location.reload();
 	});
 
-
 	$('#drive').click(function(){
-		drive();
+		// drive();
 		if(timer != null) return;
 		timer = setInterval(function(){
+			drive();
 			value++;
 			$('.btn #sec').html(value + " Seconds");
 		}, inteval);
