@@ -20,6 +20,15 @@ body {
     padding: 0px;
 }
 
+.btn #diff {
+	background-color: gray;
+	height: 38%;
+	width: 100%;
+    font-size: 16px;
+    color: #3f4c6b;
+    padding: 0px;
+}
+
 button {
 	background-color: #e4f5fc;
 	height: 20%;

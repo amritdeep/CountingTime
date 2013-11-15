@@ -1,9 +1,12 @@
 $(document).ready(function(){
 	var timer = null,
 		interval = 1000,
-		value = 0;
+		value = 1;
 
 	stopMove();
+	$('#reset').click(function(){
+		location.reload();
+	});
 
 	$('#stop').click(function(){
 		clearInterval(timer);
@@ -11,18 +14,37 @@ $(document).ready(function(){
 		stopMove();
 	});
 
-	$('#reset').click(function(){
-		location.reload();
-	});
-
 	$('#drive').click(function(){
+	// alert("Timer : " + timer + "=" + value + " : value");
+		$('.btn #sec').html(value + " Seconds");
+
 		if(timer != null) return;
 		timer = setInterval(function(){
 			drive();
-			value++;
+			++value;
 			$('.btn #sec').html(value + " Seconds");
 		}, interval);
 	})
+
+	$('#fifteen').click(function(){
+		clearInterval(timer);
+		timer = null;
+		stopMove();
+
+		if(value < 15){
+			value = 14 - value;
+			value++;
+			$('.btn #diff').html(value + " Seconds near to destination");
+			// alert(value);
+		}
+		else if(value > 15){
+			value = value - 15;
+			$('.btn #diff').html(value + " Seconds fast than destination");
+		}
+		else {
+			$('.btn #diff').html(value + " Seconds extactlly to destination");
+		}
+	});
 
 function drive(){
 	for(var i = 1; i < 5; i++){
@@ -41,5 +63,5 @@ function stopMove(){
 	$('#car-moving').hide();
 	$('#car-demo').show();
 }
-	
+
 });
