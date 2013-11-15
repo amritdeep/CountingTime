@@ -1,65 +1,27 @@
 $(document).ready(function(){
+	var counter = 0;
+	var click = 0;
 	stopMove();
 
 	$('#stop').click(function(){
 		stopMove();
 		// var stop_time = new Date().getTime();
 	});
+	$('#reset').click(function(){
+		location.reload();
+	});
 
-
-	/*
-	$('#drive').click(function(e){
-		e.preventDefault();
-
-		// var start_time = Date.now();
-		var start_time = 0;
-
-		$(this).animate(drive(), function(){
+	setInterval(function(){
+		$('#drive').click(function(){
+			drive();
+			counter++;
+			// var count = counter++;
 			$('#stop').click(function(){
-					// var stop_time = Date.now()
-					// var stop_time = new Date().getTime() % 60;
-					var stop_time = start_time ++;
-					// var elapsed = time + start_time;
-					alert(stop_time);
-
-					// alert(stop_time + ":" + start_time + "=" + elapsed );
-
-					// var diff = new Date(elapsed);
-
-					var offset = new Date().getTimezoneOffset();
-					// alert(offset);
-
-					// alert((diff.getTime() % 1000) % 60 );
-					// alert((diff.getMinutes() % 60))
-					// var hr = diff.getHours() % 60;
-					// var min = diff.getMinutes() % 60;
-					// var sec = diff.getSeconds() % 60;
-					// alert(sec);
-					$('.btn #sec').html("You have drive " + hr + ":" + min + ":" + sec  + "long");
-				// }
+				$('.btn #sec').html("You have drive " + counter);
 			});
 		});
-	});
-*/
 
-	// var counter = 0;
-
-	// $('#drive').click(function(){
-	// 	// counter++
-	// 	$('.btn #sec').html(counter++);
-	// });
-
-	$('.btn #sec').date('count', 0);
-	$('#drive').click(function(){
-		$('.btn #sec').html(function(){
-			var $this = $(this),
-				count = $this.date('count') + 1;
-
-				$this.date('count', count);
-				return count;
-		});
-	});
-
+	}, 1000);
 
 function drive(){
 	for(var i = 1; i < 5; i++){
