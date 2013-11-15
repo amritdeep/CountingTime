@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var timer = null,
-		inteval = 1000,
+		interval = 1000,
 		value = 0;
 
 	stopMove();
@@ -16,13 +16,12 @@ $(document).ready(function(){
 	});
 
 	$('#drive').click(function(){
-		// drive();
 		if(timer != null) return;
 		timer = setInterval(function(){
 			drive();
 			value++;
 			$('.btn #sec').html(value + " Seconds");
-		}, inteval);
+		}, interval);
 	})
 
 function drive(){
@@ -41,21 +40,6 @@ function stopMove(){
 	}
 	$('#car-moving').hide();
 	$('#car-demo').show();
-}
-
-function stops(){
-	for(var i = 1; i < 5; i++){
-		$('#cloud_id' + i).stop();
-		$('#tree_id' + i).stop();
-	}
-	$('#car-moving').hide();
-	$('#car-demo').show();
-}
-
-function count_sec(counts){
-	for(var i = 0; i <= counts; i++){
-		$('.btn #sec').html(i + "Seconds");
-	}
 }
 	
 });
