@@ -1,27 +1,29 @@
 $(document).ready(function(){
-	var counter = 0;
-	var click = 0;
+	var timer = null,
+		inteval = 1000,
+		value = 0;
+		
 	stopMove();
 
 	$('#stop').click(function(){
 		stopMove();
-		// var stop_time = new Date().getTime();
+		clearInterval(timer);
+		timer = null;
 	});
+
 	$('#reset').click(function(){
 		location.reload();
 	});
 
-	setInterval(function(){
-		$('#drive').click(function(){
-			drive();
-			counter++;
-			// var count = counter++;
-			$('#stop').click(function(){
-				$('.btn #sec').html("You have drive " + counter);
-			});
-		});
 
-	}, 1000);
+	$('#drive').click(function(){
+		drive();
+		if(timer != null) return;
+		timer = setInterval(function(){
+			value++;
+			$('.btn #sec').html(value + " Seconds");
+		}, inteval);
+	})
 
 function drive(){
 	for(var i = 1; i < 5; i++){
