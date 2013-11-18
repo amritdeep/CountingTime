@@ -1,56 +1,67 @@
 $(document).ready(function(){
 	var timer = null,
 		interval = 1000,
-		value = 1;
+		value = 1, 
+		estimate_value = 0, difference;
 
 	stopMove();
 	$('#reset').click(function(){
 		location.reload();
 	});
 
-	$('#stop').click(function(){
-		clearInterval(timer);
-		timer = null;
+	$('#stop').bind('click', function(){
 		stopMove();
+		if(value < estimate_value){
+				difference = estimate_value - value;
+				alert("Sorry !!! You prediction is less than " + difference + " Seconds");
+			}
+			else if(value > estimate_value){
+				difference = value - estimate_value;
+				alert("Sorry !!! You prediction is greater than " + difference + " Seconds");
+			}
+			else {
+				alert("Congratulation !!! You have predicted correct value i.e."+ estimate_value+" Seconds");
+			}
 	});
-
-	$('#drive').click(function(){
-	// alert("Timer : " + timer + "=" + value + " : value");
-		$('.btn #sec').html(value + " Seconds");
-
-		if(timer != null) return;
-		timer = setInterval(function(){
-			drive();
-			++value;
-			$('.btn #sec').html(value + " Seconds");
-		}, interval);
-	})
 
 	$('#fifteen').click(function(){
-		clearInterval(timer);
-		timer = null;
-		stopMove();
-
-		if(value < 15){
-			value = 14 - value;
-			value++;
-			$('.btn #diff').html(value + " Seconds near to destination");
-			// alert(value);
-		}
-		else if(value > 15){
-			value = value - 15;
-			$('.btn #diff').html(value + " Seconds fast than destination");
-		}
-		else {
-			$('.btn #diff').html(value + " Seconds extactlly to destination");
-		}
+		$('#thirty').hide();
+		$('#forty_five').hide();
+		$('#sixty').hide();
+		estimate_value=15;
+		drive();
 	});
 
-	// $('#thirty').click(function(){
-		
-	// });
+	$('#thirty').click(function(){
+		$('#fifteen').hide();
+		$('#forty_five').hide();
+		$('#sixty').hide();
+		estimate_value=30;
+		drive();
+	});
 
-function drive(){
+	$('#forty_five').click(function(){
+		$('#fifteen').hide();
+		$('#thirty').hide();
+		$('#sixty').hide();
+		estimate_value=45;
+		drive();
+	});
+
+	$('#sixty').click(function(){
+		$('#fifteen').hide();
+		$('#thirty').hide();
+		$('#forty_five').hide();
+		estimate_value=60;
+		drive();
+	});
+
+function drive(){	
+	if(timer != null) return;
+	timer = setInterval(function(){
+		++value;
+	}, interval);
+
 	for(var i = 1; i < 5; i++){
 		$('#cloud_id' + i).addClass('move_cloud' + i).show();
 		$('#tree_id' + i).addClass('move_tree' + i).show();
@@ -60,6 +71,9 @@ function drive(){
 }
 
 function stopMove(){
+	clearInterval(timer);
+	timer = null;
+
 	for(var i = 1; i < 5; i++){
 		$('#cloud_id' + i).removeClass('move_cloud' + i).hide();
 		$('#tree_id' + i).removeClass('move_tree' + i).hide();
@@ -69,3 +83,4 @@ function stopMove(){
 }
 
 });
+

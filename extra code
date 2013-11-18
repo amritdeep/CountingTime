@@ -1,0 +1,74 @@
+	// $('#thirty').click(function(){
+	// 	clearInterval(timer);
+	// 	timer = null;
+	// 	stopMove();
+
+	// 	if(timer != null) return;
+	// 	timer = setInterval(function(){
+	// 		drive();
+	// 		++value;
+	// 	}, interval);
+
+	// 	if(value < 30){
+	// 		value = 29 - value;
+	// 		value++;
+	// 		alert("Sorry !!! You prediction is less than " + value + " Seconds");
+	// 	}
+	// 	else if(value > 30){
+	// 		value = value - 30;
+	// 		alert("Sorry !!! You prediction is greater than " + value + " Seconds");
+	// 	}
+	// 	else {
+	// 		alert("Congratulation !!! You have predicted correct");
+	// 	}
+	// });
+
+	// $('#forty_five').click(function(){
+	// 	clearInterval(timer);
+	// 	timer = null;
+	// 	stopMove();
+
+	// 	if(timer != null) return;
+	// 	timer = setInterval(function(){
+	// 		drive();
+	// 		++value;
+	// 	}, interval);
+
+	// 	if(value < 45){
+	// 		value = 45 - value;
+	// 		value++;
+	// 		alert("Sorry !!! You prediction is less than " + value + " Seconds");
+	// 	}
+	// 	else if(value > 45){
+	// 		value = value - 45;
+	// 		alert("Sorry !!! You prediction is greater than " + value + " Seconds");
+	// 	}
+	// 	else {
+	// 		alert("Congratulation !!! You have predicted correct");
+	// 	}
+	// });
+
+	// $('#sixty').click(function(){
+	// 	clearInterval(timer);
+	// 	timer = null;
+	// 	stopMove();
+
+	// 	if(timer != null) return;
+	// 	timer = setInterval(function(){
+	// 		drive();
+	// 		++value;
+	// 	}, interval);
+
+	// 	if(value < 60){
+	// 		value = 59 - value;
+	// 		value++;
+	// 		alert("Sorry !!! You prediction is less than " + value + " Seconds");
+	// 	}
+	// 	else if(value > 60){
+	// 		value = value - 60;
+	// 		alert("Sorry !!! You prediction is greater than " + value + " Seconds");
+	// 	}
+	// 	else {
+	// 		alert("Congratulation !!! You have predicted correct");
+	// 	}
+	// });
