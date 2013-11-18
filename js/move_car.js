@@ -13,18 +13,19 @@ $(document).ready(function(){
 		stopMove();
 		if(value < estimate_value){
 				difference = estimate_value - value;
-				alert("Sorry !!! You prediction is less than " + difference + " Seconds");
+				$('.road #sec').html("Sorry !!! You prediction is " + difference + " seconds less");
 			}
 			else if(value > estimate_value){
 				difference = value - estimate_value;
-				alert("Sorry !!! You prediction is greater than " + difference + " Seconds");
+				$('.road #sec').html("Sorry !!! You prediction is " + difference + " seconds greater");
 			}
 			else {
-				alert("Congratulation !!! You have predicted correct value i.e."+ estimate_value+" Seconds");
+				$('.road #sec').html("Congratulation !!! You prediction is correct i.e."+ estimate_value +" seconds");
 			}
 	});
 
 	$('#fifteen').click(function(){
+		$('#stop').html("Predict");
 		$('#thirty').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -33,6 +34,7 @@ $(document).ready(function(){
 	});
 
 	$('#thirty').click(function(){
+		$('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -41,6 +43,7 @@ $(document).ready(function(){
 	});
 
 	$('#forty_five').click(function(){
+		$('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#sixty').hide();
@@ -49,6 +52,7 @@ $(document).ready(function(){
 	});
 
 	$('#sixty').click(function(){
+		$('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#forty_five').hide();
@@ -68,6 +72,8 @@ function drive(){
 	}
 	$('#car-moving').show();
 	$('#car-demo').hide();
+
+	$('.road #sec').hide();
 }
 
 function stopMove(){
@@ -80,6 +86,12 @@ function stopMove(){
 	}
 	$('#car-moving').hide();
 	$('#car-demo').show();
+
+	$('#fifteen').show();
+	$('#thirty').show();
+	$('#forty_five').show();
+	$('#sixty').show();
+	$('.road #sec').show();
 }
 
 });
