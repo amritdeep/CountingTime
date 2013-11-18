@@ -46,6 +46,10 @@ $(document).ready(function(){
 		}
 	});
 
+	// $('#thirty').click(function(){
+		
+	// });
+
 function drive(){
 	for(var i = 1; i < 5; i++){
 		$('#cloud_id' + i).addClass('move_cloud' + i).show();
