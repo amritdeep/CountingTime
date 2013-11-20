@@ -2,12 +2,11 @@ body {
 	background: url('../images/road.png') repeat-x;
 }
 .btn {
-	/*background-color: #e4f5fc;*/
 	background-color: rgb(76,76,76);
 	width: 100%;
 	height: 5%;
 	position: absolute;
-    bottom: 18%;
+    bottom: 20%;
 	z-index: 3;
 }
 
@@ -21,7 +20,7 @@ body {
 
 .btn ul li #stop {
     background: blue;
-    float: left;
+   	float: right;
 }
 
 .btn ul li #drive {
@@ -35,7 +34,7 @@ body {
 
 button {
 	background-color: #e4f5fc;
-	height: 150%;
+	height: 250%;
 	width: 10%
 }
 
@@ -144,6 +143,7 @@ button {
     width: 30%;
     height: 65%;
     position: relative;
+    bottom: 15%;
 	transform: translate(300px, 0px);
 	-webkit-transform: translate(300px, 0px);
 	-moz-transform: translate(300px, 0px);

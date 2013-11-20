@@ -25,7 +25,7 @@ $(document).ready(function(){
 	});
 
 	$('#fifteen').click(function(){
-		$('#stop').html("Predict");
+		// $('#stop').html("Predict");
 		$('#thirty').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -34,7 +34,7 @@ $(document).ready(function(){
 	});
 
 	$('#thirty').click(function(){
-		$('#stop').html("Predict");
+		// $('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -43,7 +43,7 @@ $(document).ready(function(){
 	});
 
 	$('#forty_five').click(function(){
-		$('#stop').html("Predict");
+		// $('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#sixty').hide();
@@ -52,7 +52,7 @@ $(document).ready(function(){
 	});
 
 	$('#sixty').click(function(){
-		$('#stop').html("Predict");
+		// $('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#forty_five').hide();
