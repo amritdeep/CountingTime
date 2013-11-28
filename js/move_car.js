@@ -73,6 +73,7 @@ function drive(){
 
 	$('#car-moving').show();
 	$('#car-demo').hide();
+	$('#stop').show();
 	// $('#road_move').show();
 
 	$('.road #sec').hide();
@@ -90,12 +91,11 @@ function stopMove(){
 	for(var i = 1; i < 9; i++){
 		$('#whitestrip' + i).removeClass('' + i).hide()
 	}
-
-	// $('#stop').attr("disabled", true);
+	
 	$('#car-moving').hide();
 	$('#car-demo').show();
+	$('#stop').hide();
 	// $('#road_move').hide();
-
 
 	$('#fifteen').show();
 	$('#thirty').show();
