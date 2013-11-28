@@ -1,0 +1,137 @@
+[33mcommit 22cdf31fcdc0da0835e21fc9c215a76bca783283[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Thu Nov 28 12:39:17 2013 +0545
+
+    add whitestrip in road way
+
+[33mcommit b5ddce701cbc7f2498a4510ce2009734c34486f5[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Wed Nov 20 15:59:53 2013 +0545
+
+    modifiy style
+
+[33mcommit 9f1fd483d07927acf7b5115ccae63b83962500ea[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Mon Nov 18 15:56:01 2013 +0545
+
+    add style'
+
+[33mcommit 913dfcbd357138b3ad732d4e819cfd911759965a[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Mon Nov 18 14:38:25 2013 +0545
+
+    enter code for estimate value
+
+[33mcommit 6ff259eb65d9fdb4afcb18dec5c9b520ffd13bf6[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Mon Nov 18 09:07:18 2013 +0545
+
+    add driving function
+
+[33mcommit f401f17efec66a09dac6e28ffe4794eb24183ee7[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 15 16:36:01 2013 +0545
+
+    implement function for 15 seconds
+
+[33mcommit e155c939f6ec5665cdc3ed394e9b6d552e209c31[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 15 13:20:56 2013 +0545
+
+    clear javascript code
+
+[33mcommit 258d84ea16b88bd17820377bacb850caa0f621bc[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 15 13:17:53 2013 +0545
+
+    clear the code of style.css
+
+[33mcommit 0df5e28a0400cc7935a0a56b87da2b6ad761e113[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 15 12:28:57 2013 +0545
+
+    drive, stop and reset funtion work
+
+[33mcommit 1e3164f24e90a1e74f8306ca51332fa0e72d6452[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 15 11:49:17 2013 +0545
+
+    work drive funtion
+
+[33mcommit d8bf7fc3bbe35fd11412b7c867c88500f7059968[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 15 10:11:20 2013 +0545
+
+    change in time function
+
+[33mcommit a67a95b6da7e5e7c2e1cf319f19a368d4404c300[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Wed Nov 13 15:39:47 2013 +0545
+
+    add moving car
+
+[33mcommit ef00903d758a553a16aee7ec5b8d400b777b5a48[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Tue Nov 12 16:52:51 2013 +0545
+
+    add jquery function for movement
+
+[33mcommit abb459994aee56621a69f744817f1776a61f5b8d[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Sun Nov 10 15:19:55 2013 +0545
+
+    add background images
+
+[33mcommit 662803c354846ba325c89906506dc6d37f9806f2[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Sun Nov 10 14:51:22 2013 +0545
+
+    Done with moving car animation, cloud animation and tree animation
+
+[33mcommit 38ded3de67a30909e018eb9420d99de411c7bfcd[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 8 15:54:12 2013 +0545
+
+    implement seconds button
+
+[33mcommit 0b57522b097d9752375a1d770cad1f5a38e770bf[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 8 15:35:31 2013 +0545
+
+    arrage the button place
+
+[33mcommit 151c434fee4a5a1b1074b9d4eb5770ce4dcb8f3d[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 8 15:26:24 2013 +0545
+
+    implement clicking button function
+
+[33mcommit 3c06659fe6faeb2aceb4fdef67593ebca5a555cc[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 8 14:45:27 2013 +0545
+
+    add animation for cloud and car for its movement
+
+[33mcommit 78f63af9bc2b53cf21984a91ab87f6b76a1784ae[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 8 13:05:27 2013 +0545
+
+    add cloud animation
+
+[33mcommit 37607ae8f59a44be4d28709d87e676d49dc38a07[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 8 12:29:38 2013 +0545
+
+    add animation for car using keyframes
+
+[33mcommit e231b588699f869cd56a8e30679e2f6927dc19cf[m
+Author: Amrit Deep Dhungana <amritdeepdhungana@hotmail.com>
+Date:   Fri Nov 8 11:35:09 2013 +0545
+
+    initialize project and add images and css design in project
+
+[33mcommit 0b00c0a6e9f4fbfc9ff468ee3a32886f312bff79[m
+Author: amritdeep <amritdeepdhungana@hotmail.com>
+Date:   Thu Nov 7 21:04:56 2013 -0800
+
+    Initial commit
