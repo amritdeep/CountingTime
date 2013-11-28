@@ -25,7 +25,6 @@ $(document).ready(function(){
 	});
 
 	$('#fifteen').click(function(){
-		// $('#stop').html("Predict");
 		$('#thirty').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -34,7 +33,6 @@ $(document).ready(function(){
 	});
 
 	$('#thirty').click(function(){
-		// $('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -43,7 +41,6 @@ $(document).ready(function(){
 	});
 
 	$('#forty_five').click(function(){
-		// $('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#sixty').hide();
@@ -52,7 +49,6 @@ $(document).ready(function(){
 	});
 
 	$('#sixty').click(function(){
-		// $('#stop').html("Predict");
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#forty_five').hide();
@@ -70,8 +66,14 @@ function drive(){
 		$('#cloud_id' + i).addClass('move_cloud' + i).show();
 		$('#tree_id' + i).addClass('move_tree' + i).show();
 	}
+
+	for(var i = 1; i < 9; i++){
+		$('#whitestrip' + i).removeClass('' + i).show();
+	}
+
 	$('#car-moving').show();
 	$('#car-demo').hide();
+	// $('#road_move').show();
 
 	$('.road #sec').hide();
 }
@@ -84,8 +86,16 @@ function stopMove(){
 		$('#cloud_id' + i).removeClass('move_cloud' + i).hide();
 		$('#tree_id' + i).removeClass('move_tree' + i).hide();
 	}
+
+	for(var i = 1; i < 9; i++){
+		$('#whitestrip' + i).removeClass('' + i).hide()
+	}
+
+	// $('#stop').attr("disabled", true);
 	$('#car-moving').hide();
 	$('#car-demo').show();
+	// $('#road_move').hide();
+
 
 	$('#fifteen').show();
 	$('#thirty').show();

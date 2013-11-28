@@ -1,6 +1,7 @@
 body {
 	background: url('../images/road.png') repeat-x;
 }
+
 .btn {
 	background-color: rgb(76,76,76);
 	width: 100%;
@@ -144,6 +145,7 @@ button {
     height: 65%;
     position: relative;
     bottom: 15%;
+    z-index: 1;
 	transform: translate(300px, 0px);
 	-webkit-transform: translate(300px, 0px);
 	-moz-transform: translate(300px, 0px);
@@ -151,5 +153,83 @@ button {
 	-ms-transform: translate(300px, 0px);
 }
 
+.road .driving_road #road_move {
+	background: url('../images/road-with-zebra.png') repeat-x;
+	width: 100%;
+	height: 80%;
+	position: relative;
+	bottom: 70%;
+	left: -1%;
+}
 
+/*Design Whitestrip*/
+
+.road .driving_road #whitestrip1, 
+.road .driving_road #whitestrip2, 
+.road .driving_road #whitestrip3 {	
+	position: relative;
+	bottom: 57px;
+	z-index: 2;
+	animation: move_road .1s infinite;
+}
+
+.road .driving_road #whitestrip5, 
+.road .driving_road #whitestrip6,
+.road .driving_road #whitestrip7,
+.road .driving_road #whitestrip8 {
+	position: relative;
+	bottom: 57px;
+	z-index: 2;
+	animation: move_road_first .1s infinite;
+}
+
+.road .driving_road #whitestrip1 {
+	left: -20px;
+}
+
+.road .driving_road #whitestrip2 {
+	left: 38px;
+}
+
+.road .driving_road #whitestrip3 {
+	left: 90px;
+}
+
+.road .driving_road #whitestrip5 {
+	left: 465px;
+}
+
+.road .driving_road #whitestrip6 {
+	left: 525px;
+}
+
+.road .driving_road #whitestrip7 {
+	left: 580px;
+}
+
+.road .driving_road #whitestrip8 {
+	left: 630px;
+}
+
+@keyframes move_road {	
+	100% {
+		transform: translate(-150px, 0px);
+		-webkit-transform: translate(-150px, 0px);
+		-moz-transform: translate(-150px, 0px);
+		-o-transform: translate(-150px, 0px);
+		-ms-transform: translate(-150px, 0px);
+	}
+
+}
+
+@keyframes move_road_first {	
+	100% {
+		transform: translate(-125px, 0px);
+		-webkit-transform: translate(-125px, 0px);
+		-moz-transform: translate(-125px, 0px);
+		-o-transform: translate(-125px, 0px);
+		-ms-transform: translate(-125px, 0px);
+	}
+
+}
 
