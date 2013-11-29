@@ -47,41 +47,28 @@ button {
 
 /*Define Cloud */
 .picture .cloud {
+	position: absolute;
     height: 40%;
     width: 100%;
-	position: absolute;
 }
 
 .picture .cloud #cloud1 {
-	position: absolute;
 	left: 7%;
 	top: 12%;
-	animation: move_cloud .5s infinite;
 }
 
 .picture .cloud #cloud2 {
-	position: absolute;
 	top: 48%;
 	left: 49%;
-	animation: move_cloud .5s infinite;
 }
 
 .picture .cloud #cloud3 {
-	position: absolute;
 	right: 6%;
 	top: 21%;
-	animation: move_cloud .5s infinite;
-}
-
-@keyframes move_cloud {
-	100% {
-		transform: translate(-1200px, 0px);
-	}
 }
 
 /*Define Tree*/
 .picture .tree {
-	/*background-color: red;*/
 	height: 37.5%;
 	width: 100%;
 	position: absolute;
@@ -89,29 +76,35 @@ button {
 }
 
 .picture .tree #tree1 {
-	position: absolute;
 	left: 3.5%;
 	top: 30%;
-	animation: move_tree .5s infinite;
 }
 
 .picture .tree #tree2 {
-	position: absolute;
 	left: 49%;
 	top: 25%;
-	animation: move_tree .5s infinite;
 }
 
 .picture .tree #tree3 {
-	position: absolute;
 	right: 3.7%;
 	top: 18%;
-	animation: move_tree .5s infinite;
 }
 
-@keyframes move_tree {
+/*Animate Cloud and Tree */
+
+.picture .cloud #cloud1, .picture .cloud #cloud2, .picture .cloud #cloud3,
+.picture .tree #tree1, .picture .tree #tree2, .picture .tree #tree3 {
+	position: absolute;
+	animation: move_cloud_tree .5s infinite;
+}
+
+@keyframes move_cloud_tree {
 	100% {
 		transform: translate(-1200px, 0px);
+		-webkit-transform: translate(-1200px, 0px);
+		-moz-transform: translate(-1200px, 0px);
+		-o-transform: translate(-1200px, 0px);
+		-ms-transform: translate(-1200px, 0px);
 	}
 }
 
@@ -148,8 +141,6 @@ button {
 }
 
 .road .driving_road #road_move {
-	/*background: url('../images/road-with-zebra.png') repeat-x;*/
-	/*background: url('../images/road1.png') repeat-x;*/
 	width: 100%;
 	height: 80%;
 	position: relative;
@@ -158,8 +149,6 @@ button {
 }
 
 .road .driving_road {
-	/*background-color: red;	*/
-	/*background: url('../images/road1.png') repeat-x;*/
 	width: 100%;
 	position: relative;
 	bottom: 67%;

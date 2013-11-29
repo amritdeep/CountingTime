@@ -25,6 +25,7 @@ $(document).ready(function(){
 	});
 
 	$('#fifteen').click(function(){
+		// $(this).attr("disabled", true);
 		$('#thirty').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -33,6 +34,7 @@ $(document).ready(function(){
 	});
 
 	$('#thirty').click(function(){
+		// $(this).attr("disabled", true);
 		$('#fifteen').hide();
 		$('#forty_five').hide();
 		$('#sixty').hide();
@@ -41,6 +43,7 @@ $(document).ready(function(){
 	});
 
 	$('#forty_five').click(function(){
+		// $(this).attr("disabled", true);
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#sixty').hide();
@@ -49,6 +52,7 @@ $(document).ready(function(){
 	});
 
 	$('#sixty').click(function(){
+		// $(this).attr("disabled", true);
 		$('#fifteen').hide();
 		$('#thirty').hide();
 		$('#forty_five').hide();
@@ -104,11 +108,8 @@ function stopMove(){
 	for(var i = 1; i < 9; i++){
 		$('#whitestrip' + i).removeClass('' + i).hide()
 	}
-
-	// $('body').css({
-	// 	'background-image' : 'url("../images/background_withcloud.png")',
-	// 	'background-repeat' : 'repeat-x'
-	// }).show();
+	
+	$(this).attr("disabled", true);
 
 	$('#car-moving').hide();
 	$('#car-demo').show();
