@@ -62,6 +62,11 @@ function drive(){
 		++value;
 	}, interval);
 
+	$(document.body).css({
+		'background-image':'url(images/background.png)',
+		'background-repeat':'repeat-x'
+	});
+
 	// Drive Cloud and Tree
 	for(var i = 1; i < 4; i++){
 		$('#cloud' + i).addClass('cloud' + i).show();
@@ -72,8 +77,6 @@ function drive(){
 	for(var i = 1; i < 9; i++){
 		$('#whitestrip' + i).removeClass('' + i).show();
 	}
-
-	// $('body').css('background', 'url("../images/road.png") repeat-x');
 
 	$('#car-moving').show();
 	$('#car-demo').hide();
@@ -86,6 +89,11 @@ function stopMove(){
 	clearInterval(timer);
 	timer = null;
 
+	$(document.body).css({
+		'background-image':'url(images/background_withcloud.png)',
+		'background-repeat':'repeat-x'
+	});
+
 	// Stop Cloud and Tree
 	for(var i = 1; i < 4; i++){
 		$('#cloud' + i).removeClass('cloud' + i).hide();
@@ -96,6 +104,11 @@ function stopMove(){
 	for(var i = 1; i < 9; i++){
 		$('#whitestrip' + i).removeClass('' + i).hide()
 	}
+
+	// $('body').css({
+	// 	'background-image' : 'url("../images/background_withcloud.png")',
+	// 	'background-repeat' : 'repeat-x'
+	// }).show();
 
 	$('#car-moving').hide();
 	$('#car-demo').show();

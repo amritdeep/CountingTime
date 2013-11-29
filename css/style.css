@@ -1,6 +1,6 @@
 body {
-	/*background: url('../images/road.png') repeat-x;*/
-	background: url('../images/background.png') repeat-x;
+	/*background: url('../images/background.png') repeat-x;*/
+	background: url('../images/background_withcloud.png') repeat-x;
 }
 
 .btn {
@@ -56,26 +56,26 @@ button {
 	position: absolute;
 	left: 7%;
 	top: 12%;
-	animation: move_cloud 1s infinite;
+	animation: move_cloud .5s infinite;
 }
 
 .picture .cloud #cloud2 {
 	position: absolute;
 	top: 48%;
 	left: 49%;
-	animation: move_cloud 1s infinite;
+	animation: move_cloud .5s infinite;
 }
 
 .picture .cloud #cloud3 {
 	position: absolute;
 	right: 6%;
 	top: 21%;
-	animation: move_cloud 1s infinite;
+	animation: move_cloud .5s infinite;
 }
 
 @keyframes move_cloud {
 	100% {
-		transform: translate(-1000px, 0px);
+		transform: translate(-1200px, 0px);
 	}
 }
 
@@ -92,21 +92,21 @@ button {
 	position: absolute;
 	left: 3.5%;
 	top: 30%;
-	animation: move_tree 1s infinite;
+	animation: move_tree .5s infinite;
 }
 
 .picture .tree #tree2 {
 	position: absolute;
 	left: 49%;
-	top: 15%;
-	animation: move_tree 1s infinite;
+	top: 25%;
+	animation: move_tree .5s infinite;
 }
 
 .picture .tree #tree3 {
 	position: absolute;
 	right: 3.7%;
 	top: 18%;
-	animation: move_tree 1s infinite;
+	animation: move_tree .5s infinite;
 }
 
 @keyframes move_tree {
@@ -116,7 +116,6 @@ button {
 }
 
 /*Define Road */
-
 .picture .road {
 	height: 20%;
 	width: 100%;
